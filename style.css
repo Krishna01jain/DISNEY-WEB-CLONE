@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    /* background-color: rgb(197, 255, 109);
+     */
+    background: url('2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* bac */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px rgb(153, 114, 198);
+    margin-left: 40px;
+     
+     transition: 0.3s; 
+    translate: rotatez(360deg); 
+
+
+}
+
+
+.container h1 {
+
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(134, 134, 221), 0 0 5px rgb(109, 51, 170);
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(246, 217, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(134, 134, 221), 0 0 5px rgb(109, 51, 170);
+
+}
+
+
+
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: rgba(183, 130, 240, 0.818);
+    padding: 15px;
+    font-size: 16;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(164, 12, 191), 0 0 5px rgb(88, 88, 146);
+    box-shadow: 10px 10px 100px rgba(183, 27, 188, 0.729);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+/* till here is you type then a border still comes in text area  */
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+
+}
+
+/* now we remove it */
+
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(139, 70, 228);
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+}
+
+/* border removed */
+
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    text-shadow: 2px 2px 2px black, 0 0 25px rgb(134, 134, 221), 0 0 5px rgb(133, 133, 224);
+    /* pointer-events: none; */
+
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    /* color: lightblue; */
+    transform: translateY(-30px);
+}
+
