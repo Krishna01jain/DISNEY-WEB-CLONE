@@ -22,9 +22,9 @@ function next() {
   }
 
   document.body.style.background = "url(" + image[i - 1] + ".jpg) no-repeat";
-  // document.body.style.height = "100%";
   document.body.style.backgroundAttachment = "fixed";
   document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "top center";
 }
 
 setInterval(next, 5000);
