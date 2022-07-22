@@ -3,15 +3,20 @@
 
 }
 
+html {
+    height: 100%;
+}
 
 body {
     /* background-color: rgb(197, 255, 109);
      */
+    /*      
     background: url('2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* bac */
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,9 +35,9 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 100px rgb(153, 114, 198);
     margin-left: 40px;
-     
-     transition: 0.3s; 
-    translate: rotatez(360deg); 
+
+    transition: 0.3s;
+    translate: rotatez(360deg);
 
 
 }
@@ -131,3 +136,16 @@ body {
     transform: translateY(-30px);
 }
 
+/* 
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        background: url('2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+} */
