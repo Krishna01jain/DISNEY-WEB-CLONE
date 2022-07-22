@@ -24,7 +24,8 @@ function next() {
   document.body.style.background = "url(" + image[i - 1] + ".jpg) no-repeat";
   document.body.style.backgroundAttachment = "fixed";
   document.body.style.backgroundSize = "cover";
-  document.body.style.backgroundPosition = "top center";
+  document.body.style.backgroundPosition = "center"; // 1
+  document.body.style.position = "relative"; //2  these 1 and 2 help to make he background image responsive
 }
 
 setInterval(next, 5000);
